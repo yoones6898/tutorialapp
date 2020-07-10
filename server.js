@@ -21,7 +21,7 @@ app.use(express.static(__dirname+ '/public'));
 
 
 
-mongoose.connect('mongodb://localhost:27017/tutorial' , {useNewUrlParser: true, useUnifiedTopology: true},function (err) {
+mongoose.connect('mongodb+srv://yoones:yoones6898@cluster0.mwki5.mongodb.net/tutorial?retryWrites=true&w=majority' , {useNewUrlParser: true, useUnifiedTopology: true},function (err) {
     if (err){
         throw err;
         console.log("not connected " + err);
